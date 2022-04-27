@@ -17,7 +17,7 @@ function ex1(arr){
     }
     console.log(arr);
 }
-ex1([1,4,3]);
+ex1([7,2,9]);
 2.
 3.
 // 4.Cho 3 số nguyên, hãy viết chương trình xuất ra có bao nhiêu số lẻ và bao nhieu so chẵn
@@ -34,7 +34,7 @@ function ex4(arr){
     console.log("Trong 3 số nguyên có " + sochan +" số chẵn và " + sole+" số lẻ");
 
 }
-ex4([2, 5, 7]);
+ex4([6,2,9]);
 // 5.Viết chương trình nhập tháng và cho biết tháng đó có bao nhiêu ngày
 function ex5(n){
     if(n===1 || n===3||n===5 ||n===7 ||n===8||n===10||n===12){
@@ -160,15 +160,15 @@ function ex9(a, b, c){
     if((a+b) <= c || (a+c)<=b ||(b+c)<= a){
         console.log("Tam giác không hợp lệ!");
     }else{
-        if((a == b) && (b == c))
+        if((a === b) && (b === c))
 		{
 			console.log("Là tam giác đều");
 		}else{
-			if(a * a + b * b == c * c || a * c + c * c == b * b || b * b + c * c == a * c)
+			if(a * a + b * b === c * c || a * c + c * c === b * b || b * b + c * c === a * c)
 			{
 				console.log("Là tam giác vuông");
 			}else{
-                if(a == b || a == c || b == c){
+                if(a === b || a === c || b === c){
                     console.log("Là tam giác cân");
                 }else{
                     console.log("Là tam giác thường");
@@ -197,7 +197,7 @@ ex10();
 function ex11(arr){
     function isprime(n){
         for(var i=2; i<=Math.sqrt(n); i++){
-            if(n%i==0){
+            if(n%i===0){
                 return false;
             }   
         }
